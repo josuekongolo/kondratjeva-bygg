@@ -1,0 +1,404 @@
+/* ============================================
+   KONDRATJEVA BYGG - Responsive Stylesheet
+   Mobile-First Responsive Design
+   ============================================ */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.375rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features */
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Pricing Grid */
+    .pricing__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Service Detail List */
+    .service-detail__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Approach Grid */
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Form Row */
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer Grid */
+    .footer__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    /* Navigation */
+    .nav {
+        display: block;
+    }
+
+    .header__cta {
+        display: block;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none !important;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: calc(100vh - 80px);
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__content {
+        max-width: 650px;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Features */
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* About Intro */
+    .about-intro {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Approach Grid */
+    .approach-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    /* Footer Grid */
+    .footer__grid {
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    /* Typography */
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 2rem;
+    }
+
+    /* Hero */
+    .hero__title {
+        font-size: 4rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.5rem;
+    }
+
+    /* Section */
+    .section {
+        padding: 6rem 0;
+    }
+
+    /* Quick Contact */
+    .quick-contact__inner {
+        gap: var(--spacing-xl);
+    }
+}
+
+/* Mobile Specific (below 768px) */
+@media (max-width: 767px) {
+    /* Header */
+    .header__inner {
+        height: 70px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 70px;
+        min-height: 100vh;
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+    }
+
+    .hero__buttons .btn {
+        width: 100%;
+    }
+
+    /* Quick Contact */
+    .quick-contact__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* CTA Buttons */
+    .cta__buttons {
+        flex-direction: column;
+    }
+
+    .cta__buttons .btn {
+        width: 100%;
+    }
+
+    /* Service Detail */
+    .service-detail__header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        padding: var(--spacing-lg);
+    }
+
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+
+    /* Testimonial */
+    .testimonial {
+        padding: var(--spacing-md);
+    }
+
+    .testimonial::before {
+        font-size: 3rem;
+    }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 374px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero__badge {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .service-card {
+        padding: var(--spacing-md);
+    }
+
+    .service-card__icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Ensure crisp text and icons on retina displays */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .mobile-nav,
+    .hero__buttons,
+    .cta,
+    .quick-contact,
+    .footer {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+
+    h1, h2, h3 {
+        color: #000;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero__overlay {
+        background: none;
+    }
+
+    .hero__content {
+        color: #000;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .service-card,
+    .project-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Dark Mode Support (optional - for future) */
+@media (prefers-color-scheme: dark) {
+    /*
+    :root {
+        --color-light: #1a1a2e;
+        --color-white: #16213e;
+        --color-text: #e8e8e8;
+        --color-text-light: #b8b8b8;
+        --color-gray-100: #1f1f3d;
+        --color-gray-200: #2a2a4a;
+        --color-gray-300: #3a3a5a;
+    }
+    */
+}
+
+/* Landscape Mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: calc(70px + 2rem) 0 2rem;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger tap targets for touch devices */
+    .btn {
+        min-height: 48px;
+    }
+
+    .nav__link {
+        padding: 0.75rem;
+    }
+
+    .mobile-nav__link {
+        padding: 1rem;
+    }
+
+    /* Remove hover effects that don't work well on touch */
+    .service-card:hover,
+    .project-card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+}
+
+/* Hover Device Optimizations */
+@media (hover: hover) and (pointer: fine) {
+    /* Enhanced hover effects for mouse/trackpad users */
+    .service-card:hover .service-card__icon {
+        background-color: var(--color-secondary);
+    }
+
+    .service-card:hover .service-card__icon svg {
+        fill: var(--color-white);
+    }
+}
